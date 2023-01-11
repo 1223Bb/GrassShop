@@ -1,0 +1,11 @@
+body {
+  --primary-color: #81b622;
+  --secondary-color: #ecf87f;
+  --dark-color: #59981a;
+  --darker-color: #3d550c;
+  --text-color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+}
