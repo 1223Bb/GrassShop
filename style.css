@@ -44,11 +44,6 @@ li {
   height: 100%;
 }
 
-.navbarcontent h1 {
-  /* display: inline; */
-  color: white;
-}
-
 .logo {
   display: flex;
   justify-content: center;
@@ -64,6 +59,7 @@ li {
 
 .logo h1 {
   align-self: center;
+  color: white;
 }
 
 /* Sections */
