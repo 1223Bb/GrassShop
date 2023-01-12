@@ -1,11 +1,176 @@
+/* imports */
+/* Fonts (Playfair Display, Work Sans and Inter) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,800;1,400&family=Work+Sans:ital,wght@0,100;0,300;1,100&display=swap");
+
+/* Setting defaults */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body {
   --primary-color: #81b622;
   --secondary-color: #ecf87f;
   --dark-color: #59981a;
   --darker-color: #3d550c;
-  --text-color: var(--primary-color);
+  --text-color: var(--darker-color);
+
+  /* background-color: rgb(250, 250, 242); */
+  font-family: "Inter", sans-serif;
 }
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Header */
+.navbar {
+  height: 5em;
+  background-color: var(--primary-color);
+  padding: 1% 0.7%;
+}
+
+.navbarcontent {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 100%;
+}
+
+.navbarcontent h1 {
+  /* display: inline; */
+  color: white;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  height: 100%;
+  padding: auto 0px;
+}
+
+.logo img {
+  width: auto;
+  height: inherit;
+}
+
+.logo h1 {
+  align-self: center;
+}
+
+/* Sections */
+section {
+  margin-top: 2%;
+}
+
+/* Hero */
+
+#hero {
+  width: 100%;
+  height: 20rem;
+  background-image: linear-gradient(#00000063, #000000b0), url("./img/hero.jpg");
+  background-position: center;
+  background-size: 250% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+
+  /* Animation */
+  transition: ease 0.3s;
+}
+
+#hero h1 {
+  font-family: "Playfair Display", sans-serif;
+
+  /* Animation */
+  transition: ease 0.3s;
+}
+
+#hero p {
+  font-family: "Work Sans", sans-serif;
+  font-style: italic;
+  /* Animation */
+  transition: ease 0.3s;
+}
+
+/* Content */
+.content {
+  padding: 0px 5%;
+}
+
+/* Product cards */
+
+#gramas .flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2em;
+}
+
+.card {
+  flex: 1 1 200px;
+  max-width: 200px;
+  max-height: 300px;
+  border: 3px solid var(--darker-color);
+  border-radius: 0.5em;
+  margin: 0px auto;
+  overflow: hidden;
+  text-overflow: "...";
+  box-shadow: rgba(0, 0, 0, 0.493) 0px 0px 0.5em;
+}
+
+.card img {
+  max-width: 100%;
+  /* max-height: 25%; */
+  object-fit: cover;
+}
+
+/* Contact info */
+
+#contato ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 5% auto;
+}
+
+#contato a {
+  color: #59981a;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2%;
+  margin-top: 5%;
+}
+
+/* ---------------- */
+
+/* Animations and extras */
+
+#hero:hover {
+  background-size: 275% auto;
+}
+
+#hero:hover h1 {
+  font-size: 1.75rem;
+}
+
+#hero:hover p {
+  font-size: 1.2rem;
 }
