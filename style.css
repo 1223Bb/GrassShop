@@ -185,6 +185,31 @@ section:not(#hero) h1 {
   padding: 0px 5%;
 }
 
+/* About */
+/* #quem div {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+} */
+
+#quem p {
+  flex: 2;
+  /* font-size: clamp(1rem, 600vw 5rem); */
+  /* font-size: 1.75rem */
+}
+
+#quem img {
+  display: block;
+  flex: 1;
+  width: 35%;
+  margin: 1rem;
+  border: #263606 solid;
+  border-radius: 0.5em;
+  object-fit: cover;
+  margin: 1rem auto;
+}
+
 /* Product cards */
 
 #gramas .flex {
@@ -290,5 +315,12 @@ footer {
 
   .mobilenavmenu {
     display: block;
+  }
+
+  #quem div {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
   }
 }
