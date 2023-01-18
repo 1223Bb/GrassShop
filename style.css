@@ -9,6 +9,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   scroll-margin-block-start: 5em;
+  text-align: center;
 }
 
 body {
@@ -138,6 +139,32 @@ nav ul li {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
+.stickywhatsapp {
+  /* transform-origin: bottom right; */
+  opacity: 0.3;
+  background-color: #25d366;
+  overflow: hidden;
+  width: 90px;
+  height: 90px;
+  border: #075e54 solid 3px;
+  border-radius: 50%;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  z-index: 1;
+  /* Animation */
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: whatsappring 1s 0.5s;
+  transition: 0.3s;
+}
+
+.stickywhatsapp img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  left: 2%;
+}
+
 /* Sections */
 section:not(#hero) {
   margin-top: 2%;
@@ -145,6 +172,7 @@ section:not(#hero) {
 
 section:not(#hero) h1 {
   text-align: center;
+  font-size: 1.7rem;
 }
 
 /* Hero */
@@ -169,7 +197,7 @@ section:not(#hero) h1 {
 
 #hero h1 {
   font-family: "Playfair Display", sans-serif;
-
+  font-size: 3.5rem;
   /* Animation */
   transition: ease 0.3s;
 }
@@ -177,6 +205,7 @@ section:not(#hero) h1 {
 #hero p {
   font-family: "Work Sans", sans-serif;
   font-style: italic;
+  font-size: 2.5rem;
   /* Animation */
   transition: ease 0.3s;
 }
@@ -335,11 +364,11 @@ footer {
 }
 
 #hero:hover h1 {
-  font-size: 1.75rem;
+  font-size: 4rem;
 }
 
 #hero:hover p {
-  font-size: 1.2rem;
+  font-size: 2.7rem;
 }
 
 .mobilenavmenu ul li:hover {
@@ -348,6 +377,34 @@ footer {
 
 .contactbutton:hover {
   transform: scale(1.1);
+}
+
+.stickywhatsapp:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+@keyframes whatsappring {
+  20% {
+    opacity: 1;
+    transform: scale(1.1) rotate(5deg);
+  }
+
+  30% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+
+  40% {
+    transform: scale(1.1) rotate(5deg);
+  }
+
+  50% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+
+  80% {
+    opacity: 1;
+  }
 }
 
 /* width */
