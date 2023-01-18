@@ -127,6 +127,7 @@ nav ul li {
 
 .mobilenavmenu ul li {
   text-align: right;
+  color: white;
   padding: 0.5rem 0.5rem;
   font-size: 2rem;
   /* Animation */

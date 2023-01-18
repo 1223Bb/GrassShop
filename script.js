@@ -1,4 +1,4 @@
-function mobileMenuClick() {
-  document.getElementById("mobilenavcheck").checked =
-    !document.getElementById("mobilenavcheck").checked;
+function mobileMenuClick(link) {
+  document.getElementById("mobilenavcheck").checked = false;
+  document.getElementById(link).scrollIntoView();
 }
